@@ -11,7 +11,7 @@ import requests
 import datetime
 
 # Pobierz wartość zmiennej środowiskowej API_KEYsd
-
+api_key = st.secrets["API_KEY"]
 
 def get_ticker_for_company(company_name):
     prompt = f"Napisz mi TYLKO, ticker yahoo finance firmy: {company_name}, pamiętaj o końcówkach do giełd, chodzi o to że akcje notowane na przykład na giełdzie w warszawie mogą mieć .WA jak np PKN.WA. Mogą mieć ale nie muszą."
